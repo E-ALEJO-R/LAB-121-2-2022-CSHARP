@@ -18,6 +18,7 @@ namespace DefenseOne
             whatsaap.a();
             
             Console.WriteLine("\nc) █████████████████ Mostrar los nombres de contactos...");
+            whatsaap.b(telegram);
             Console.ReadKey();
         }
     }
