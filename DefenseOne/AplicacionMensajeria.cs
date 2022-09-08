@@ -80,9 +80,25 @@ namespace DefenseOne
             }
         }
 
-        public void b()
+        public void b(AplicacionMensajeria app)
         {
-            
+            for (int i = 0; i < nroGrupos; i++)
+            {
+                
+            }
+        }
+
+        public bool noEstaEnSegundo(string numero)
+        {
+            for (int i = 0; i < nroContactos; i++)
+            {
+                if (contactos[i, 1].Equals(numero))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }
