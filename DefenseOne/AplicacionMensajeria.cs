@@ -12,7 +12,7 @@ namespace DefenseOne
 
         public AplicacionMensajeria()
         {
-            nom = "signal";
+            nom = "whatsaap";
             nroGrupos = 3;
             grupos[0, 0] = "Lab-121 F"; grupos[0, 1] = "110"; grupos[0, 2] = "2/08/2022"; grupos[0, 3] = "701003";
             grupos[1, 0] = "wally"; grupos[1, 1] = "22"; grupos[1, 2] = "15/03/2022"; grupos[1, 3] = "605252";
@@ -74,8 +74,8 @@ namespace DefenseOne
             {
                 if (contactos[i, 1].Equals(grupos[pos, 3]))
                 {
-                    Console.WriteLine("Administrador del grupo " + grupos[pos, 0] + contactos[i, 0]);
-                    Console.WriteLine("Fecha de creación del grupo " + grupos[pos, 0] + "es: " + grupos[pos, 2]);
+                    Console.WriteLine("Administrador del grupo " + grupos[pos, 0] + " es: " + contactos[i, 0]);
+                    Console.WriteLine("Fecha de creación del grupo " + grupos[pos, 0] + " es: " + grupos[pos, 2]);
                 }
             }
         }
