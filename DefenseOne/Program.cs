@@ -16,6 +16,7 @@ namespace DefenseOne
             Console.WriteLine("\nb) █████████████████ Dado una apliación de mensajeria...");
             
             Console.WriteLine("\nc) █████████████████ Mostrar los nombres de contactos...");
+            Console.ReadKey();
         }
     }
 }

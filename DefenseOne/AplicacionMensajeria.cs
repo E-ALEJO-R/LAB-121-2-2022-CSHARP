@@ -54,5 +54,35 @@ namespace DefenseOne
             }
             Console.WriteLine("-------------------------------------");
         }
+
+        public void a()
+        {
+            int cantidad = 0;
+            int pos = 0;
+            int tmp;
+            for (int i = 0; i < nroGrupos; i++)
+            {
+                tmp = Int32.Parse(grupos[i, 1]);
+                if (tmp > cantidad)
+                {
+                    cantidad = tmp;
+                    pos = i;
+                }
+            }
+
+            for (int i = 0; i < nroContactos; i++)
+            {
+                if (contactos[i, 1].Equals(grupos[pos, 3]))
+                {
+                    Console.WriteLine("Administrador del grupo " + grupos[pos, 0] + contactos[i, 0]);
+                    Console.WriteLine("Fecha de creación del grupo " + grupos[pos, 0] + "es: " + grupos[pos, 2]);
+                }
+            }
+        }
+
+        public void b()
+        {
+            
+        }
     }
 }
